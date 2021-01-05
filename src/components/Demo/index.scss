@@ -1,0 +1,38 @@
+.Demo {
+    display: flex;
+    background-color: #222;
+    color: #DDD;
+
+    > .StoryBook {
+        flex: 1;
+        background-color: #111;
+        align-items: center;
+        justify-content: center;
+
+        > .Title {
+            margin: 10px;
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        > .Items {
+            display: flex;
+            flex-direction: column;
+            > .Item {
+                margin: 5px 20px;
+                cursor: pointer;
+
+                &.Selected {
+                    color: rgb(35, 131, 65);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    > .PlayGround {
+        flex: 6;
+    }
+}
