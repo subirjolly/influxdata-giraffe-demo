@@ -14,13 +14,7 @@ class GaugeLayerConfig extends Configuration {
                 hex: '#FF0000',
                 name: 'Red',
                 value: 1
-            }, {
-                id: 'green',
-                type: 'max',
-                hex: '#00FF00',
-                name: 'Green',
-                value: 50
-            }, {
+            },{
                 id: 'blue',
                 type: 'threshold',
                 hex: '#0000FF',

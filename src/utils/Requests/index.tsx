@@ -23,7 +23,6 @@ export default class Requests {
             cache: 'default',
             body: JSON.stringify(body)
         })
-        
         return await fetch(request).then(r => r.text()).then(r => r)
     }
 }
