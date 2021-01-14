@@ -11,16 +11,19 @@ class GaugeLayerConfig extends Configuration {
             gaugeColors: [{
                 id: 'red',
                 type: 'min',
-                hex: '#FF0000',
+                hex: '#8e1fc3',
                 name: 'Red',
-                value: 1
+                value: 0
             },{
                 id: 'blue',
                 type: 'threshold',
-                hex: '#0000FF',
+                hex: '#066fc5',
                 name: 'Blue',
                 value: 100
-            }]
+            }],
+            gaugeTheme: {
+                valueColor : "#066fc5"
+            }
         }
     
         return {

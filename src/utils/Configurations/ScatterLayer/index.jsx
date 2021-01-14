@@ -1,4 +1,5 @@
 import Configuration from '../Configuration'
+import {NINETEEN_EIGHTY_FOUR} from "@influxdata/giraffe";
 
 
 class ScatterLayerConfig extends Configuration {
@@ -11,7 +12,8 @@ class ScatterLayerConfig extends Configuration {
             layers: [{
                 type: this.type,
                 x: "_time",
-                y: "_value"
+                y: "_value",
+                colors: ["#066fc5"]
             }]
         }
     }

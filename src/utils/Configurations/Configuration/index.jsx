@@ -7,7 +7,9 @@ export default class Configuration {
         'scatter': 'Scatter Layer',
         'heatmap' : 'Heatmap Layer',
         'band' : 'Band Layer',
-        'single stat' : "Single stat Layer"
+        'single stat' : "Single stat Layer",
+        'histogram' : "Histogram stat Layer",
+        'table' : "Table stat Layer",
     }
     
     constructor(configType) {

@@ -9,9 +9,9 @@ class SingleStatLayerConfig extends Configuration {
 
         const layer = {
             type: 'single stat',
-            prefix: "Mem : ",
+            prefix: "",
             suffix: " %",
-            textColor : "red",
+            textColor : "#066fc5",
             decimalPlaces : {
                 digits : 3
             }

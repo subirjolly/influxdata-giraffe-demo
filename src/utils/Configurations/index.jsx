@@ -4,6 +4,8 @@ import ScatterLayerConfig from './ScatterLayer'
 import HeatMapLayerConfig from "./HeatMapLayer";
 import BandLayerConfig from "./BandLayer";
 import SingleStatLayerConfig from "./SingleStat";
+import HistogramLayerConfig from "./HistogramLayer";
+import TableLayerConfig from "./TableLayerConfig";
 
 const Configurations = {
     get() {
@@ -14,6 +16,8 @@ const Configurations = {
             new HeatMapLayerConfig(),
             new BandLayerConfig(),
             new SingleStatLayerConfig(),
+            new HistogramLayerConfig(),
+            new TableLayerConfig(),
         ]
     }
 }

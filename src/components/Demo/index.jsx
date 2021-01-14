@@ -41,9 +41,10 @@ function Demo() {
     return (
         <div className='Demo'>
             <StoryBook index={getConfigs()} />
+
             <div className='PlayGround'>
             {
-                data && <PlayGround config={getConfig()} table={fromFlux(data).table} />
+                data && <PlayGround config={getConfig()} table={data} />
             }
             </div>
         </div>

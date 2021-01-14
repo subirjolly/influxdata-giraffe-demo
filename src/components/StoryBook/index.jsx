@@ -10,7 +10,7 @@ function StoryBook(props) {
     }
     return (
         <div className='StoryBook'>
-            <div className='Title'>Sahas's title</div>
+            {/*<div className='Title'>Layer Examples</div>*/}
             <div className='Items'>
                 {getIndex()}
             </div>

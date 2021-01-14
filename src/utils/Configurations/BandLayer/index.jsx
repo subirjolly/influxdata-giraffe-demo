@@ -1,4 +1,5 @@
 import Configuration from '../Configuration'
+import NINETEEN_EIGHTY_FOUR from "@influxdata/giraffe"
 
 class BandLayerConfig extends Configuration {
     constructor() {
@@ -6,13 +7,20 @@ class BandLayerConfig extends Configuration {
     }
 
     getConfig() {
-
         const layer = {
             type: 'band',
-            x: "_time",
-            y: "_value",
-            fill:["_time","_value"],
-            mainColumnName: "mean"
+            x: '_time',
+            y: '_value',
+            fill: ["result", "_field", "_measurement", "cpu", "host"],
+            colors: NINETEEN_EIGHTY_FOUR,
+            interpolation: "monotoneX",
+            lineWidth: 3,
+            lineOpacity: 0.7,
+            shadeOpacity: 0.3,
+            hoverDimension: "auto",
+            upperColumnName: "max",
+            mainColumnName: "mean",
+            lowerColumnName: "min",
         }
 
         return {

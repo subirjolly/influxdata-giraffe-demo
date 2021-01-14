@@ -3,7 +3,9 @@ import PlotRenderer from '../PlotRenderer'
 function PlayGround(props) {
     const getConfig = () => {
         const config = props.config.getConfig()
-        config.table = props.table
+        config.fluxResponse = props.table
+
+        console.log(config);
 
         return config
     }

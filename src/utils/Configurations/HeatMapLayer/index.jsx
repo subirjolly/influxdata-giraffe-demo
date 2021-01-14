@@ -1,4 +1,5 @@
 import Configuration from '../Configuration'
+import { INFERNO} from "@influxdata/giraffe";
 
 class HeatMapLayerConfig extends Configuration {
     constructor() {
@@ -10,6 +11,7 @@ class HeatMapLayerConfig extends Configuration {
             type: "heatmap",
             x: "_time",
             y: "_value",
+            colors: INFERNO
         }
 
         return {

@@ -1,4 +1,5 @@
 import Configuration from '../Configuration'
+import {NINETEEN_EIGHTY_FOUR} from "@influxdata/giraffe";
 
 
 class LineLayerConfig extends Configuration {
@@ -11,7 +12,10 @@ class LineLayerConfig extends Configuration {
             layers: [{
                 type: "line",
                 x: "_time",
-                y: "_value"
+                y: "_value",
+                lineWidth : 5,
+                interpolation : "natural",
+                colors: ["#066fc5"]
             }]
         }
     }
